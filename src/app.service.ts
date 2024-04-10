@@ -74,9 +74,9 @@ export class AppService {
         cause: error
       });
     }
-
-//DELETE
   }
+  
+//DELETE
   deleteTodos(id) {
     try{
       const aux = data.findIndex(todo => todo.id === id)
@@ -97,4 +97,6 @@ export class AppService {
     }
 
   }
+
+
 }

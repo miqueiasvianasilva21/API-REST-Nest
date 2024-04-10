@@ -19,18 +19,11 @@ export class AppController {
   }
   @Put('/todos/:id')
   putTodo(@Body() todo, @Param('id') id : String): ITodo | Error{
-    // console.log(todo)
     return this.appService.updateTodos(id,todo);
-    
   }
 
   @Delete('todos/:id')
   deleteTodo(@Param('id') id : String): boolean{
-    // console.log(todo)
     return this.appService.deleteTodos(id);
-    
   }
-
-
-
 }
